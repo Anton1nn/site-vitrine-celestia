@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Celestia – L’avenir du SaaS avec l’IA</title>
+    <meta name="description" content="Celestia repense le SaaS grâce à l’automatisation et l’intelligence artificielle. Découvrez nos solutions innovantes, notre vision et contactez-nous !">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preload" href="three.min.js" as="script">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+</head>
+<body>
+    <!-- ✅ Canvas pour la scène 3D -->
+    <canvas id="bg"></canvas>
+
+    <header class="nav-header">
+        <div class="logo">Celestia</div>
+        <nav>
+            <ul>
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#solutions">Nos Solutions</a></li>
+                <li><a href="#exemples">Exemples de SaaS</a></li>
+                <li><a href="#vision">Notre Vision</a></li>
+                <li><a href="#contact">Nous Contacter</a></li>
+            </ul>
+        </nav>
+        <button class="cta-header" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">
+            Nous contacter
+        </button>
+        <div class="burger-menu" id="burger-menu">
+            <span></span><span></span><span></span>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="accueil" class="section hero">
+            <div class="hero-content">
+                <h1><span class="celestia-gradient">Celestia</span></h1>
+                <h2>L’IA qui sculpte vos <span class="highlight">SaaS</span></h2>
+                <p class="hero-sub">Automatisation, créativité, performance.<br>Transformez votre entreprise avec nos solutions AI-first.</p>
+                <div class="hero-buttons">
+                    <button class="cta-primary" onclick="document.getElementById('solutions').scrollIntoView({behavior:'smooth'})">
+                        Découvrir nos SaaS
+                    </button>
+                    <button class="cta-secondary" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">
+                        Nous contacter
+                    </button>
+                </div>
+            </div>
+            <div class="hero-3d">
+                <!-- La scène 3D est en fond via #bg -->
+            </div>
+            <span class="scroll-indicator">
+                <svg width="30" height="40" viewBox="0 0 30 40"><rect x="5" y="8" width="20" height="30" rx="10" stroke="#fff" fill="none"/><circle cx="15" cy="20" r="4" fill="#fff"/></svg>
+            </span>
+        </section>
+
+        <!-- Nos Solutions -->
+        <section id="solutions" class="section solutions">
+            <div class="container">
+                <h2 class="section-title">Nos Solutions</h2>
+                <div class="solutions-list">
+                    <div class="solution-card animated-fadein">
+                        <div class="icon-solution"><img src="icons/automate.svg" alt="Automatisation IA"></div>
+                        <h3>Automatisation intelligente</h3>
+                        <p>Simplifiez les workflows les plus complexes grâce à une intelligence décisionnelle avancée.</p>
+                    </div>
+                    <div class="solution-card animated-fadein" style="animation-delay:.15s">
+                        <div class="icon-solution"><img src="icons/collab.svg" alt="Collaboratif IA"></div>
+                        <h3>Collaboration augmentée</h3>
+                        <p>Alignez les équipes et automatisez la gestion collaborative de vos tâches, documents, ressources.</p>
+                    </div>
+                    <div class="solution-card animated-fadein" style="animation-delay:.3s">
+                        <div class="icon-solution"><img src="icons/data.svg" alt="Optimisation IA"></div>
+                        <h3>Optimisation par la donnée</h3>
+                        <p>Pilotez vos activités en temps réel grâce à l’analyse automatisée et prédictive de vos données.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Exemples de SaaS -->
+        <section id="exemples" class="section exemples">
+            <div class="container">
+                <h2 class="section-title">Exemples de SaaS réalisés</h2>
+                <div class="exemples-list">
+                    <div class="exemple-card animated-risein">
+                        <div class="exemple-img-bg">
+                            <img src="images/baguette_bureau.png" alt="Baguette & Bureau">
+                        </div>
+                        <div class="exemple-info">
+                            <h3>Baguette & Bureau</h3>
+                            <p>La gestion artisanale des boulangeries réinventée par l’automatisation IA : commande, stocks, personnel, tout piloté en temps réel.</p>
+                        </div>
+                    </div>
+                    <div class="exemple-card animated-risein" style="animation-delay:.12s">
+                        <div class="exemple-img-bg">
+                            <img src="images/datasynch.png" alt="DataSynch">
+                        </div>
+                        <div class="exemple-info">
+                            <h3>DataSynch</h3>
+                            <p>SaaS de synchronisation avancée pour entreprises multi-sites, avec recommandations d’optimisation automatique.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Notre Vision -->
+        <section id="vision" class="section vision">
+            <div class="container">
+                <div class="vision-content animated-fadein">
+                    <h2 class="section-title">Notre Vision</h2>
+                    <p>Nous croyons en l’<strong>humain augmenté</strong>. Celestia conçoit des plateformes SaaS centrées sur l’utilisateur, pilotées par l’intelligence artificielle, mais pensées pour la simplicité, la sécurité et la performance.</p>
+                    <ul class="vision-values">
+                        <li>✨ Automatiser tout ce qui peut l’être, sans compromis sur la maîtrise</li>
+                        <li>🌌 Créer des expériences immersives et plaisantes</li>
+                        <li>🔒 Respecter l’éthique et la confidentialité des données</li>
+                        <li>🧩 Vous accompagner à chaque étape, dans la co-construction de vos outils AI-driven</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Nous Contacter -->
+        <section id="contact" class="section contact">
+            <div class="container">
+                <div class="contact-content animated-fadein">
+                    <h2 class="section-title">Nous Contacter</h2>
+                    <p>Parlons de votre projet ! Laissez-nous un message :</p>
+                    <form id="contact-form" autocomplete="off">
+                        <div class="form-row">
+                            <input type="text" name="name" placeholder="Votre nom" required>
+                        </div>
+                        <div class="form-row">
+                            <input type="email" name="email" placeholder="Votre email" required>
+                        </div>
+                        <div class="form-row">
+                            <textarea name="message" placeholder="Votre message" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="cta-primary">Envoyer</button>
+                    </form>
+                </div>
+                <div class="contact-social">
+                    <a href="mailto:contact@celestia.ai" class="circle-btn" title="Envoyer un mail"><img src="icons/mail.svg" alt="Mail"></a>
+                    <a href="https://linkedin.com/company/celestia" target="_blank" class="circle-btn" title="LinkedIn"><img src="icons/linkedin.svg" alt="LinkedIn"></a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <span>&copy; 2024 Celestia. Tous droits réservés.</span>
+            <a href="#accueil" class="scroll-top" title="Retour en haut">↑</a>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="three.min.js"></script>
+    <script src="three-scene.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
